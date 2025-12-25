@@ -1,0 +1,218 @@
+.navbar {
+    background: linear-gradient(to top, rgb(56, 0, 0), red);
+}
+
+.navbar a {
+    color: white;
+}
+
+.navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none !important;
+}
+
+.banner {
+    height: 100vh;
+    width: 100%;
+    padding-top: 3.5rem;
+    background-image: url(../images/banner.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+}
+
+.banner img {
+    border-radius: 100%;
+    height: 200px;
+    width: 200px;
+}
+
+.banner .fundo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.800);
+    justify-content: center;
+    align-items: center;
+}
+
+.persianas {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    padding: 5%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel .carousel-item {
+    height: 80vh;
+    width: 100%;
+}
+
+.carousel img {
+    border-radius: 2.5rem;
+    height: 80vh;
+    width: 100%;
+    border: 10px solid darkred;
+    object-fit: cover;
+    object-position: center;
+}
+
+.carousel-caption {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 10px;
+    color: darkred;
+    padding: 3px;
+}
+
+.carousel-caption p {
+    color: darkred;
+    padding: 3px;
+    text-align: center;
+}
+
+.sobre-nos {
+    flex-direction: column;
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.sobre-nos .text-image {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.sobre-nos .text {
+    border-right: 0.2rem solid white;
+    font-size: 1.5rem;
+    padding-inline: 3rem;
+
+}
+
+.sobre-nos img {
+    padding-inline: 1rem;
+    width: 50vh;
+    height: 50vh;
+}
+
+@media (max-width: 950px) {
+    .sobre-nos {
+        height: 70vh;
+        width: 100%;
+    }
+    .sobre-nos .text {
+        border: none;
+        font-size: 1rem;
+        padding: 0%;
+    }
+    .sobre-nos img {
+        display: none;
+    }
+}
+
+.localização {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+}
+
+.localização .mapa {
+    border-radius: 1rem;
+    width: 85%;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    align-items: center;
+    background: linear-gradient(to bottom, rgb(56, 0, 0), red);
+    gap: 1.3rem;
+}
+
+footer div:nth-child(1) {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+footer div:nth-child(2) a {
+    font-style: italic;
+}
+
+footer div:nth-child(2) span {
+    color: violet;
+}
+
+footer img {
+    border-radius: 100%;
+    height: 100px;
+    width: 100px;
+}
+
+footer ul {
+    display: flex;
+    gap: 1rem;
+}
+
+footer ul li {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+footer ul li p {
+    display: flex;
+    padding-top: 1rem;
+}
+
+@media (max-width: 900px) {
+    footer div:nth-child(1) {
+        flex-direction: column;
+        gap: 2rem;
+        padding-block: 1.5rem;
+    }
+    footer ul {
+        flex-direction: column;
+    }
+}
+
+footer ul, a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
